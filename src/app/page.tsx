@@ -1,4 +1,4 @@
-import { SettingsTabs } from './components/SettingTabs'
+import { SettingsTabs } from '../components/SettingTabs'
 
 export default function Home() {
   return (
