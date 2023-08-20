@@ -1,9 +1,10 @@
-import { ChevronDown, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 import { Input } from '@/components/Form/Input'
 import { SettingsTabs } from '../components/SettingTabs'
 import { FileInput } from '@/components/Form/FIleInput'
 import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 
 export default function Home() {
   return (
@@ -108,13 +109,26 @@ export default function Home() {
             >
               Country
             </label>
-            <Select />
+            <Select placeholder="Select a country...">
+              <SelectItem value="br" text="Brazil" />
+              <SelectItem value="us" text="United States" />
+            </Select>
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
             <label htmlFor="tz" className="text-sm font-medium text-zinc-700">
               Time zone
             </label>
+            <Select placeholder="Select a timezone...">
+              <SelectItem
+                value="utc-3"
+                text="Americas Sao Paulo Time (UTC-03:00)"
+              />
+              <SelectItem
+                value="utc-8"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+            </Select>
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
