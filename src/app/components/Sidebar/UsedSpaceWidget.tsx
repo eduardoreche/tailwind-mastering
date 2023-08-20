@@ -5,7 +5,9 @@ export function UsedSpacedWidget() {
         <span className="text-sm/5 font-medium text-violet-700">
           Used space
         </span>
-        <p className="text-sm/5 text-violet-500">Your team</p>
+        <p className="text-sm/5 text-violet-500">
+          Your team has used 80% of the available space
+        </p>
       </div>
       <div className="h-2 rounded-full bg-violet-100">
         <div className="h-2 w-4/5 rounded-full bg-violet-600" />
