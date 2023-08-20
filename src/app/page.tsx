@@ -1,8 +1,9 @@
-import { Mail, UploadCloud, User } from 'lucide-react'
+import { ChevronDown, Mail } from 'lucide-react'
 
-import { Input } from '@/components/Input'
+import { Input } from '@/components/Form/Input'
 import { SettingsTabs } from '../components/SettingTabs'
 import { FileInput } from '@/components/Form/FIleInput'
+import { Select } from '@/components/Form/Select'
 
 export default function Home() {
   return (
@@ -107,6 +108,7 @@ export default function Home() {
             >
               Country
             </label>
+            <Select />
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
