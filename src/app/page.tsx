@@ -6,6 +6,7 @@ import { FileInput } from '@/components/Form/FIleInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
 import { TextArea } from '@/components/Form/TextArea'
+import { Button } from '@/components/Button'
 
 export default function Home() {
   return (
@@ -24,19 +25,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50 "
-            >
+            <Button type="reset" variant="outline" form="settings">
               Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              form="settings"
-            >
+            </Button>
+            <Button type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -44,7 +38,7 @@ export default function Home() {
           id="settings"
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200"
         >
-          <div className="grid-cols-form grid gap-3">
+          <div className="grid grid-cols-form gap-3">
             <label
               htmlFor="firstName"
               className="text-sm font-medium text-zinc-700"
@@ -62,7 +56,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="email"
               className="text-sm font-medium text-zinc-700"
@@ -77,7 +71,7 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="photo"
               className="text-sm font-medium text-zinc-700"
@@ -94,7 +88,7 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label htmlFor="role" className="text-sm font-medium text-zinc-700">
               Role
             </label>
@@ -103,7 +97,7 @@ export default function Home() {
             </Input.Root>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="country"
               className="text-sm font-medium text-zinc-700"
@@ -116,7 +110,7 @@ export default function Home() {
             </Select>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label htmlFor="tz" className="text-sm font-medium text-zinc-700">
               Time zone
             </label>
@@ -132,7 +126,7 @@ export default function Home() {
             </Select>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
               Bio
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
@@ -148,39 +142,24 @@ export default function Home() {
                 </Select>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold className="h-5 w-5 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic className="h-5 w-5 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Link className="h-5 w-5 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List className="h-5 w-5 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       className="h-5 w-5 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -188,7 +167,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid-cols-form grid gap-3 pt-5">
+          <div className="grid grid-cols-form gap-3 pt-5">
             <label
               htmlFor="projects"
               className="text-sm font-medium text-zinc-700"
@@ -205,19 +184,11 @@ export default function Home() {
             </FileInput.Root>
           </div>
 
-          <div className="ga-2 flex items-center justify-end pt-5">
-            <button
-              type="button"
-              className="rounded-lg border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50 "
-            >
+          <div className="flex items-center justify-end gap-2 pt-5">
+            <Button variant="outline" type="reset">
               Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-            >
-              Save
-            </button>
+            </Button>
+            <Button type="submit">Save</Button>
           </div>
         </form>
       </div>
