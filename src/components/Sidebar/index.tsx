@@ -19,7 +19,7 @@ import { NavItem } from './NavItem'
 import { UsedSpacedWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
 import { Input } from '../Form/Input'
-import { Button } from '../Button'
+import { Button } from '../Form/Button'
 
 export function Sidebar() {
   return (
@@ -61,7 +61,7 @@ export function Sidebar() {
 
           <UsedSpacedWidget />
 
-          <div className="h-px bg-zinc-200" />
+          <div className="h-px bg-zinc-200 dark:bg-zinc-700" />
 
           <Profile />
         </div>

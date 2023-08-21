@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { LogOut } from 'lucide-react'
-import { Button } from '../Button'
+import { Button } from '../Form/Button'
 
 export function Profile() {
   return (
